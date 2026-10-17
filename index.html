@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KDF and National Police Service recruitment eligibility assistant.">
+  <title>KDF & NPS Recruitment Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+<div class="brand-mark">
+  <img
+    src="images/police-logo.png"
+    alt="Police-inspired emblem"
+  >
+</div>
+      <div>
+        <h1>Recruitment Assistant</h1>
+        <p>KDF & National Police Service</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#requirements">Requirements</a>
+      <a href="#apply" class="nav-button">Start Assessment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">KENYA RECRUITMENT INFORMATION</span>
+        <h2>Prepare for Your Future in Public Service</h2>
+        <p>
+          Check your potential eligibility, understand recruitment
+          requirements and receive an email confirmation of your
+          assessment submission.
+        </p>
+        <a href="#apply" class="primary-button">Check My Eligibility</a>
+        <p class="notice">
+          This is an independent assistance website, not an official
+          government recruitment portal.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="requirements">
+      <div class="section-heading">
+        <span class="eyebrow">EXPLORE YOUR OPTIONS</span>
+        <h2>Choose Your Career Path</h2>
+        <p>Review the relevant requirements before proceeding.</p>
+      </div>
+
+      <div class="career-grid">
+        <article class="career-card">
+          <h3>Kenya Defence Forces</h3>
+          <p>Explore general duty, cadet and specialist career pathways.</p>
+          <ul>
+            <li>Citizenship and identification</li>
+            <li>Age and academic qualifications</li>
+            <li>Physical and medical standards</li>
+          </ul>
+          <a href="https://www.mod.go.ke/" target="_blank"
+             rel="noopener noreferrer">Official Defence website</a>
+        </article>
+
+        <article class="career-card">
+          <h3>National Police Service</h3>
+          <p>Review police constable recruitment information.</p>
+          <ul>
+            <li>Citizenship and identification</li>
+            <li>Academic qualifications</li>
+            <li>Physical and medical fitness</li>
+          </ul>
+          <a href="https://www.npsc.go.ke/" target="_blank"
+             rel="noopener noreferrer">Official NPSC website</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section application-section" id="apply">
+      <div class="section-heading">
+        <span class="eyebrow">APPLICANT PORTAL</span>
+        <h2>Eligibility Assessment</h2>
+        <p>Enter your details to begin your assessment.</p>
+      </div>
+
+      <form id="applicationForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName"
+                   type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email"
+                   type="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone"
+                   type="tel" autocomplete="tel"
+                   placeholder="e.g. 0712345678" required>
+          </div>
+
+          <div class="field">
+            <label for="service">Preferred service</label>
+            <select id="service" name="service" required>
+              <option value="">Select service</option>
+              <option value="KDF">Kenya Defence Forces (KDF)</option>
+              <option value="NPS">National Police Service (NPS)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="role">Preferred role</label>
+            <select id="role" name="role" required>
+              <option value="">Select a service first</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="age">Age in completed years</label>
+            <input id="age" name="age"
+                   type="number" min="18" max="100" required>
+          </div>
+
+          <div class="field">
+            <label for="kcse">KCSE mean grade</label>
+            <select id="kcse" name="kcse" required>
+              <option value="">Select grade</option>
+              <option>A</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>B-</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>C-</option>
+              <option>D+</option>
+              <option>D</option>
+              <option>D-</option>
+              <option>E</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="height">Height in centimetres</label>
+            <input id="height" name="height"
+                   type="number" min="100" max="250"
+                   placeholder="e.g. 175" required>
+          </div>
+        </div>
+
+        <p class="privacy-note">
+          Do not enter your National ID number, KRA PIN, passwords
+          or copies of sensitive documents into this demonstration form.
+        </p>
+
+        <button class="primary-button submit-button" type="submit">
+          Assess Eligibility
+        </button>
+
+        <p id="formMessage" class="form-message"
+           role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Recruitment Assistant | Independent public information service</p>
+    <p>Always confirm requirements and active recruitment notices
+       through official government announcements.</p>
+  </footer>
+
+<section id="document-portal" style="max-width:700px;margin:35px auto;padding:24px;border:1px solid #ddd;border-radius:12px;">
+  <h2>Applicant Document Portal</h2>
+  <p>Create an account or sign in to submit recruitment documents securely.</p>
+  <p><strong>Notice:</strong> This is an independent recruitment assistance service for KDF or NPS recruitment portal.</p>
+
+  <h3>Applicant Account</h3>
+
+  <label for="applicant-email">Email address</label>
+  <input id="applicant-email" type="email" autocomplete="email" required
+    style="display:block;width:100%;padding:10px;margin:8px 0 14px;box-sizing:border-box;">
+
+  <label for="applicant-password">Password</label>
+  <input id="applicant-password" type="password" autocomplete="current-password"
+    minlength="8" required
+    style="display:block;width:100%;padding:10px;margin:8px 0 14px;box-sizing:border-box;">
+
+  <button type="button" id="applicant-signup">Create Account</button>
+  <button type="button" id="applicant-login">Sign In</button>
+
+  <p id="account-message" role="status" aria-live="polite"></p>
+
+  <hr>
+
+  <h3>Submit a Document</h3>
+
+  <form id="document-upload-form">
+    <label for="applicant-name">Full name</label>
+    <input id="applicant-name" type="text" maxlength="120" required
+      style="display:block;width:100%;padding:10px;margin:8px 0 14px;box-sizing:border-box;">
+
+    <label for="recruitment-service">Recruitment service</label>
+    <select id="recruitment-service" required
+      style="display:block;width:100%;padding:10px;margin:8px 0 14px;box-sizing:border-box;">
+      <option value="">Choose service</option>
+      <option value="KDF">Kenya Defence Forces (KDF)</option>
+      <option value="NPS">National Police Service (NPS)</option>
+    </select>
+
+    <label for="recruitment-category">Recruitment category</label>
+    <input id="recruitment-category" type="text" maxlength="100"
+      placeholder="e.g. Police Constable" required
+      style="display:block;width:100%;padding:10px;margin:8px 0 14px;box-sizing:border-box;">
+
+    <label for="document-type">Document type</label>
+    <select id="document-type" required
+      style="display:block;width:100%;padding:10px;margin:8px 0 14px;box-sizing:border-box;">
+      <option value="">Choose document</option>
+      <option value="National ID">National ID</option>
+      <option value="KRA PIN">KRA PIN</option>
+      <option value="KCSE Certificate">KCSE Certificate</option>
+      <option value="Professional Certificate">Professional Certificate</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="applicant-file">Choose a sample document (PDF, JPG or PNG; maximum 5 MB)</label>
+    <input id="applicant-file" type="file" accept=".pdf,.jpg,.jpeg,.png"
+      required style="display:block;width:100%;margin:10px 0 18px;">
+
+    <label style="display:block;margin-bottom:16px;">
+      <input id="document-consent" type="checkbox" required>
+      I understand this is an independent service and consent to submitting this document for the stated assistance purpose.
+    </label>
+
+    <button type="submit" id="upload-document-button">Submit Document</button>
+    <p id="upload-message" role="status" aria-live="polite"></p>
+  </form>
+
+  <button type="button" id="applicant-logout">Sign Out</button>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="supabase-config.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>
